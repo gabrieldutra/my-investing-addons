@@ -5,6 +5,9 @@ The app listens on `127.0.0.1` only. To open it from your devices over HTTPS, pu
 
 ## One-time setup
 
+0. The image is private. On GitHub, create a personal access token (classic) with only `read:packages`, then in
+   Home Assistant add it under **Settings → Apps → App store → ⋮ → Registries**: registry `ghcr.io`, your GitHub
+   username, and the token as the password.
 1. In the Tailscale admin console, **DNS** page: make sure MagicDNS and HTTPS certificates are on.
 2. **Access controls**: add a tag owner for the tag the Home Assistant machine will use, e.g.
    `"tagOwners": { "tag:homeassistant": ["autogroup:admin"] }`.

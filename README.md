@@ -7,4 +7,4 @@ https://github.com/gabrieldutra/my-investing-addons
 ```
 
 Then install **My Investing** and follow its Documentation tab. The image is
-`ghcr.io/gabrieldutra/my-investing` (arm64 and amd64).
+`ghcr.io/gabrieldutra/my-investing` (arm64 and amd64, private: see the Documentation tab for the registry login).
