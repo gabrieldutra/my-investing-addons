@@ -1,0 +1,22 @@
+name: My Investing
+version: "0.1.0"
+slug: my_investing
+description: Self-hosted investment portfolio (B3, FIIs, income, taxes).
+url: https://github.com/gabrieldutra/my-investing-addons
+arch:
+  - aarch64
+  - amd64
+image: ghcr.io/gabrieldutra/my-investing
+init: false
+startup: application
+boot: auto
+# Listens on 127.0.0.1 only; the Tailscale app serves it over HTTPS on the tailnet. Nothing is exposed on the LAN.
+host_network: true
+# Stopped during backups so the embedded database is copied in a consistent state.
+backup: cold
+options:
+  public_url: ""
+  port: 8742
+schema:
+  public_url: url
+  port: port
