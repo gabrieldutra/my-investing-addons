@@ -40,6 +40,7 @@ start, keeps the previous data folder next to it, and deletes the file.
 ## Demo account
 
 To show the app without your own data, turn on `demo_account` in this app's configuration and restart it. On
-start it creates a member account, `demo@example.com`, with a made-up portfolio, and the **Log** tab shows its
-password once. It's created only if it doesn't exist yet; turning the option off doesn't delete it (remove it in
+start it creates a member account with a made-up portfolio. Sign in as `demo@example.com` with the password
+`demo-account` (set back to that on every start while the option is on). The account only holds made-up data and,
+like any member, can't see anyone else's portfolio. Turning the option off doesn't delete it (remove it in
 Settings → Accounts).
