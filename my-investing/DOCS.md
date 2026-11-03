@@ -36,3 +36,10 @@ own daily database copies (the newest 14). Keep Home Assistant backups somewhere
 **Restoring a database backup** (for example, one from another install): copy the `.tar.gz` to
 `/addon_configs/<this app's slug>/restore.tar.gz` (Samba or SSH), then restart the app. It replaces the database on
 start, keeps the previous data folder next to it, and deletes the file.
+
+## Demo account
+
+To show the app without your own data, turn on `demo_account` in this app's configuration and restart it. On
+start it creates a member account, `demo@example.com`, with a made-up portfolio, and the **Log** tab shows its
+password once. It's created only if it doesn't exist yet; turning the option off doesn't delete it (remove it in
+Settings → Accounts).

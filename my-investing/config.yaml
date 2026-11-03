@@ -1,5 +1,5 @@
 name: My Investing
-version: "0.1.8"
+version: "0.1.9"
 slug: my_investing
 description: Self-hosted investment portfolio (B3, FIIs, income, taxes).
 url: https://github.com/gabrieldutra/my-investing-addons
@@ -21,6 +21,8 @@ backup: cold
 options:
   public_url: ""
   port: 8742
+  demo_account: false
 schema:
   public_url: url
   port: port
+  demo_account: bool
