@@ -32,3 +32,7 @@ The app listens on `127.0.0.1` only. To open it from your devices over HTTPS, pu
 
 Everything lives in this app's data folder, so it's part of Home Assistant backups. The app also keeps its
 own daily database copies (the newest 14). Keep Home Assistant backups somewhere other than the SD card.
+
+**Restoring a database backup** (for example, one from another install): copy the `.tar.gz` to
+`/addon_configs/<this app's slug>/restore.tar.gz` (Samba or SSH), then restart the app. It replaces the database on
+start, keeps the previous data folder next to it, and deletes the file.
