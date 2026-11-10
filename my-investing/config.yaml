@@ -1,5 +1,5 @@
 name: My Investing
-version: "0.1.30"
+version: "0.1.31"
 slug: my_investing
 description: Self-hosted investment portfolio (B3, FIIs, income, taxes).
 url: https://github.com/gabrieldutra/my-investing-addons
